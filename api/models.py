@@ -5,7 +5,6 @@ from django.utils import timezone
 
 
 class Location(models.Model):
-    id = models.IntegerField()
     coordinates = models.CharField(max_length=100)
     time_created = models.DateTimeField(default=timezone.now)
 
